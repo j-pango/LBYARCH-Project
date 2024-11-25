@@ -22,7 +22,7 @@ int main(int argc, char* argv[]) {
 	y2 = (double*)malloc(n * sizeof(double));
 	z = (double*)malloc(n * sizeof(double));
 
-	//Initialize clock variable
+	// Initialize clock variable
 	clock_t start, end;
 	double time_taken;
 
@@ -55,9 +55,9 @@ int main(int argc, char* argv[]) {
 	printf("Time it takes to execute using C is %lf ms\n", time_taken);
 
 //----------------C PROGRAM SANITY CHECK -------
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < 10; i++) {
 		printf("%.9f\n", z[i]);
-
+	}
 
 	return 0;
 }
