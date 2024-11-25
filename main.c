@@ -22,11 +22,11 @@ int main(int argc, char* argv[]) {
 	y2 = (double*)malloc(n * sizeof(double));
 	z = (double*)malloc(n * sizeof(double));
 
-	// Initialize clock variable
+// Initialize clock variable
 	clock_t start, end;
 	double time_taken;
 
-	// Input coordinates
+// Input coordinates
 	printf("Enter values for x1:\n");
 	for (int i = 0; i < n; i++) {
 		scanf_s("%lf", &x1[i]);
@@ -54,8 +54,8 @@ int main(int argc, char* argv[]) {
 	time_taken = ((double)(end - start)) * 1000 / CLOCKS_PER_SEC;	//time program in c (ms)
 	printf("Time it takes to execute using C is %lf ms\n", time_taken);
 
-//----------------C PROGRAM SANITY CHECK -------
-	for (int i = 0; i < 10; i++) {
+//----------------C PROGRAM SANITY CHECK---------
+	for (int i = 0; i < (n < 10 ? n : 10); i++) {
 		printf("%.9f\n", z[i]);
 	}
 
