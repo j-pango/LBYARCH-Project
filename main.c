@@ -11,11 +11,8 @@ void Cdistance(int n, double * x1, double* x2, double* y1, double* y2, double* z
 }
 
 int main(int argc, char* argv[]) {
-	int n = 0;
+	int n = 134217728;
 	double* x1, * x2, * y1, * y2, * z;
-
-	printf("Enter the number of points (n): ");
-	scanf_s("%d", &n);
 
 	x1 = (double*)malloc(n * sizeof(double));
 	x2 = (double*)malloc(n * sizeof(double));
@@ -27,27 +24,7 @@ int main(int argc, char* argv[]) {
 	clock_t start, end;
 	double time_taken;
 
-// Input coordinates
-	//printf("Enter values for x1:\n");
-	//for (int i = 0; i < n; i++) 
-	//	scanf_s("%lf", &x1[i]);
-	//
-
-	//printf("Enter values for x2:\n");
-	//for (int i = 0; i < n; i++) 
-	//	scanf_s("%lf", &x2[i]);
-	//
-
-	//printf("Enter values for y1:\n");
-	//for (int i = 0; i < n; i++) 
-	//	scanf_s("%lf", &y1[i]);
-	//
-
-	//printf("Enter values for y2:\n");
-	//for (int i = 0; i < n; i++) 
-	//	scanf_s("%lf", &y2[i]);
-	//
-
+// Initialize Array with Random Numbers
 	for (int i = 0; i < n; i++) {
 		x1[i] = 1.0 + i * 0.41;  
 		x2[i] = 3.0 + i * 0.25;
@@ -67,13 +44,6 @@ int main(int argc, char* argv[]) {
 		printf("%.9f\n", z[i]);
 
 //----------------x86-64 PROGRAM VERSION----------
-	for (int i = 0; i < n; i++) {
-		x1[i] = 3.2 + i * 0.41;
-		x2[i] = 5.0 + i * 0.25;
-		y1[i] = 6.0 + i * 0.33;
-		y2[i] = 1.7 + i * 0.23;
-	}
-
 	start = clock();
 	x64distance(n, x1, x2, y1, y2, z);
 	end = clock();
