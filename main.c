@@ -11,7 +11,7 @@ void Cdistance(int n, double * x1, double* x2, double* y1, double* y2, double* z
 }
 
 int main(int argc, char* argv[]) {
-	int n = 134217728;
+	int n = 134217728; // 2^27 closest useable number near 2^30
 	double* x1, * x2, * y1, * y2, * z;
 
 	x1 = (double*)malloc(n * sizeof(double));
