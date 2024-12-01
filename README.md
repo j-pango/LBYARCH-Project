@@ -1,5 +1,6 @@
-Members: Panganiban, Joaquin Miguel <br/>
-         Jovellana, Reuben Seth
+Members: <br/>
+Panganiban, Joaquin Miguel <br/>
+Jovellana, Reuben Seth
          
 # LBYARCH Project
 
