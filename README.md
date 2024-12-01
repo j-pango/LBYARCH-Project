@@ -1,4 +1,6 @@
-
+Members: Panganiban, Joaquin Miguel
+         Jovellana, Reuben Seth
+         
 # LBYARCH Project
 
 A kernel in C and x86-64 Assembly to calculate the distance between the coordinate points across two vectors.
