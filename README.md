@@ -3,7 +3,7 @@
 
 A kernel in C and x86-64 Assembly to calculate the distance between the coordinate points across two vectors.
 
-# Setup
+## Setup
 Open lbyarch_mp.sln in Visual Studio, then run main.c.
 
 
