@@ -1,5 +1,5 @@
 
-# Project Title
+# LBYARCH Project
 
 A kernel in C and x86-64 Assembly to calculate the distance between the coordinate points across two vectors.
 
@@ -13,6 +13,8 @@ After running the kernel 30 times for vector size of n = 2<sup>27</sup>, here ar
 Average Time of C program: 8621.16666667 ms
 
 Average Time of x86-64 program: 349.416666667 ms
+
+The C program is significantly more slower than the x86-64 program mainly due to the fact that the C program uses math functions like pow() and sqrt(). The pow() function is better used for arbitrary exponents and not just squaring. The sqrt() function may involve additonal overhead.
 
 
 ## C correctness check
