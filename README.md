@@ -1,4 +1,4 @@
-Members: Panganiban, Joaquin Miguel
+Members: Panganiban, Joaquin Miguel <br/>
          Jovellana, Reuben Seth
          
 # LBYARCH Project
